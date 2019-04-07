@@ -11,7 +11,7 @@ Ivan Paulino Pereira       |262125
 
 
 ## Introdução 
-<div style="text-align: justify"> Diante das novas formas de se usarem os dispositivos eletrônicos, novas tecnologias foram sendo desenvolvidas e adaptadas para as novas funcionalidades. A busca por maiores taxas de transmissão de dados, visando formas de conexão que minimizem custos de projeto, que diminuam a necessidade de alta potência na transmissão e aumentem as áreas de cobertura sendo confiáveis vêm produzindo resultados nos meios industrial e acadêmico. Estas tecnologias estão relacionadas ao conceito de Internet das Coisas. </div>
+Diante das novas formas de se usarem os dispositivos eletrônicos, novas tecnologias foram sendo desenvolvidas e adaptadas para as novas funcionalidades. A busca por maiores taxas de transmissão de dados, visando formas de conexão que minimizem custos de projeto, que diminuam a necessidade de alta potência na transmissão e aumentem as áreas de cobertura sendo confiáveis vêm produzindo resultados nos meios industrial e acadêmico. Estas tecnologias estão relacionadas ao conceito de Internet das Coisas. 
 
 A Internet das Coisas, representada pela sigla IoT (Internet of Things), é definida de acordo com a União Internacional das Telecomunicações como uma infraestrutura global que habilita serviços avançados por meio da interconexão entre coisas, ditas físicas ou virtuais, com base nas tecnologias de informação e comunicação. Ou seja, a ideia é conectar coisas, objetos do dia-a-dia, dotando-os de capacidade de processar dados. Dessa forma, uma solução em IoT deve atender a três pré-requisitos. São eles: Reconhecimento de dados, Conexão a uma rede e a Capacidade de processar os dados sem que haja interferência humana. 
 A aplicação de IoT pode trazer benefícios aos cidadãos, à gestão pública, como questões envolvendo segurança, transporte e eficiência energética, que também é benéfica ao meio ambiente. A questão ambiental também é um fator relevante devido às fontes de energia renováveis, dentre elas a energia solar. 
@@ -31,7 +31,7 @@ Item |Uni |Quant |Descrição                          |Unitário   |Total
 5    |UN  |1     |Raspberry Pi                       |R$   290,00|R$ 290,00
 6    |UN  |1     |Sensor Allegro ACS712              |R$    26,90|R$  26,90
 7    |UN  |1     |Amplificador LM324                 |R$    12,00|R$  12,00
-     |    |      |Total                              |R$ 1.038,90| 
+### Total                              R$ 1.038,90 
 
 ## Cronograma
 Ativid. \ Mês                      |Março |Abril |Maio  |Junho
