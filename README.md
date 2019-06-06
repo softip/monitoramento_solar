@@ -74,25 +74,34 @@ As variáveis da "coisa" que devem ser medidas são a corrente e a tensão do pa
 ### b.2) 
 Primeiramente, são analisadas as especificações dos painéis solares, pois é necessário saber a faixa de operação do equipamento para a adequada elaboração e desenvolvimento do projeto.
 
-Painel                  |Potência (W)|Tensão (V)|Corrente (A)
-Yingli JS150            |150         |18.5      |8.12
-Kyocera KD140SX         |140         |17.7      |7.91
-Komaes KMP150           |150         |18.28     |8.21
-Canadian Solar CS6K 260P|260         |30.40     |8.56
-Canadian Solar CS6K 275P|275         |31        |8.88
-UPSolar M150P           |150         |18.06     |8.07
-UPSolar M315P           |315         |36.5      |8.63
+Painel                              |Potência (W)|Tensão (V)|Corrente (A)
+------------------------------------|:----------:|:--------:|:----
+Yingli JS150                        |150         |18.5      |8.12
+Kyocera KD140SX                     |140         |17.7      |7.91
+Komaes KMP150                       |150         |18.28     |8.21
+Canadian Solar CS6K 260P            |260         |30.40     |8.56
+Canadian Solar CS6K 275P            |275         |31        |8.88
+UPSolar M150P                       |150         |18.06     |8.07
+UPSolar M315P                       |315         |36.5      |8.63
  
  
 Com esta tabela é possível dimensionar um array  de placas que pode para ser projetado seguindo as especificações do sensor Allegro ACS712, o qual é apresentado no próximo item.
  
 ### b.3) 
-Após realizar uma pesquisa de mercado foi observado que a melhor opção para poder realizar as medidas da tensão e corrente é com o sensor Allegro ACS712, o qual pode ser visto na figura a seguir.
+Após realizar uma pesquisa de mercado foi observado que a melhor opção para poder realizar as medidas da corrente é com o sensor Allegro ACS712, o qual pode ser visto na figura a seguir.
 
 ![alt text](https://intranet.ifs.ifsuldeminas.edu.br/ivan.pereira/.icones/alegro_sensor.jpg)
  
-Este sensor possui fundo de escala de -30 A até 30 A, tanto para corrente contínua como para alternada. Além disso, provoca uma queda de tensão baixa durante a medição, pois sua resistência interna é de apenas 1,2 mOhm e uma sensibilidade de aproximadamente 0,066 mV/A
+Este sensor é classificado como invasivo, ou seja, é necessário abrir o circuito para fazer a medição.  Além disso, ao adicioná-lo ao circuito provoca uma baixa queda de tensão durante a medição, devido a sua resistência interna ser de apenas 1,2 mOhm. Possui fundo de escala de -30 A até 30 A tanto para corrente contínua como para alternada, com uma sensibilidade de aproximadamente 0,066 mV/A. A medição ocorre por meio do efeito hall para detectar o campo magnético gerado pela corrente.
  
+A de tensão a ser medida será realizada diretamente, mas como a entrada pino de medição não deve possuir uma tensão maior do que 5V. Então será realizado um divisor de tensão para abaixar a tensão gerada. Este circuito é isulatrado a fingura a seguir.
+
+![alt text](https://intranet.ifs.ifsuldeminas.edu.br/ivan.pereira/.icones/divisor_resistivo.jpg)
+
+O capacitor tem o objetivo de eliminar possíveis ruídos na medição.
+
+Outra medida a ser informada é a temperatura, pois apesar do aumento na irradiação solar sobre a placa fotovoltaica fornecer mais energia, o aumento da temperatura da placa danifica-a. O sensor utilizado para a medição é o LM35DZ encapsulado (proteção contra fatores adversos, como a chuva).
+
 ### b.4) 
 O circuito esquemático do sensor é apresentado na figura a seguir
 
@@ -108,6 +117,9 @@ Os pinos IP+ e IP-  conectam-se em série ao circuito que deverá ser medido.
 No site da Allegro, empresa responsável pela fabricação do sensor, há uma página de FAQ. Perguntaram qual a menor corrente que pode ser medida pelo ACS712, foi respondido que a sua resolução é determinada pelo nível de ruído, mostrando assim uma tabela das características de filtros que podem ser aplicadas.
 
 ![alt text](https://intranet.ifs.ifsuldeminas.edu.br/ivan.pereira/.icones/tabela.jpg)
+
+
+
 
 Dependendo do valor da corrente que será necessário medir, é necessário alterar o capacitor utilizado.
 
