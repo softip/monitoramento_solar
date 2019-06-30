@@ -1,0 +1,9 @@
+#######################################
+# Methods and Functions (KEYWORD1)
+#######################################
+
+readTensao	KEYWORD1
+readCorrente	KEYWORD1
+readTemperatura KEYWORD1
+
+

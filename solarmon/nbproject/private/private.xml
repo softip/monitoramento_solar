@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/solarmon/application/views/falhas/index.php</file>
+            <file>file:/var/www/solarmon/application/controllers/Medicao.php</file>
+            <file>file:/var/www/solarmon/application/views/templates/index.php</file>
+            <file>file:/var/www/solarmon/application/views/energia_gerada/index.php</file>
+            <file>file:/var/www/solarmon/application/controllers/Energia_gerada.php</file>
+            <file>file:/var/www/solarmon/application/controllers/Falhas.php</file>
+        </group>
+    </open-files>
+</project-private>
